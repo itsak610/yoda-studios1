@@ -1,0 +1,23 @@
+head
+  title Artificial Intelligence
+  link(href='stylesheets/style.css', rel='stylesheet', type='text/css')
+body
+  section
+    ul
+      li.active
+        a(href='/') Home
+      li
+        a(href='about') About us
+      li
+        a(href='contactus') Contact
+      li
+        a(href='helpus.html') Help Us
+      li
+        a(href='login') Login / Register
+    h1 Login
+        #login-form
+            form(action='auth', method='POST')
+                input(name='username', required='', type='text', placeholder='Username')
+                input(name='password', required='', type='password', placeholder='Password')
+                input(type='submit', value='Submit')
+    
