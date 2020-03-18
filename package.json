@@ -1,11 +1,37 @@
 {
-  "name": "node",
+
+  "name": "app.js",
+
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+
+  "private": true,
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "start": "node ./bin/www"
+
   },
-  "author": "",
-  "license": "ISC"
+
+  "dependencies": {
+
+    "@okta/oidc-middleware": "^1.0.2",
+
+    "cookie-parser": "~1.4.4",
+
+    "debug": "~2.6.9",
+
+    "express": "~4.16.1",
+
+    "express-session": "^1.15.6",
+
+    "handlebars": "^4.1.2",
+
+    "http-errors": "~1.6.3",
+
+    "jade": "~1.11.0",
+
+    "morgan": "~1.9.1"
+
+  }
+
 }
