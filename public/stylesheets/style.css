@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arapey');
-@font-face { font-family: Insight; src: url('./Insight.ttf'); }
+@font-face { font-family: Insight; src: url('./stylesheets/Insight.ttf'); }
 
 body {
   margin: 0;
