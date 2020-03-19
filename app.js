@@ -13,7 +13,7 @@ var login = require('./routes/login');
 // login page
 var app = express();
 
-var port = 8080;
+// var port = 8080;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,7 +38,7 @@ app.use('/contactus', contactus)
 app.use('/login', login)
 
 // port
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+// app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
