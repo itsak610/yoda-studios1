@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Arapey');
-@font-face { font-family: Insight; src: url('./font/Insight.ttf'); }
+@font-face { font-family: Insight; src: url('./Insight.ttf'); }
+
 body {
   margin: 0;
   font-family: 'Arapey';
@@ -14,9 +15,6 @@ html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
-  font:normal 75% Arial, Helvetica, sans-serif;
-}
 /* ---- particles.js container ---- */
 
 #particles-js{
