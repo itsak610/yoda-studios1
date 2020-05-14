@@ -1,0 +1,66 @@
+head
+  title YODA Studios
+  link(href='dark.css' rel='stylesheet' type='text/css')
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+  // Scroll Behavior Effect
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  script.
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+    if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+    scrollTop: $(hash).offset().top
+    }, 800, function(){
+    window.location.hash = hash;
+    });
+    }
+    });
+    });
+  script.
+    function myFunction(){
+    var elmnt = document.getElementById("content");
+    elmnt.scrollIntoView();
+    }
+section.section1
+  ul
+    li.active
+      a(href='/') Home
+    li
+      a(href='about') About us
+    li
+      a(href='contactus') Contact
+    li
+      a(href='helpus.html') Help Us
+    li
+      a(href='login') Login / Register
+  .conteneur
+    .contener
+      .pure
+        h1
+          | YOUNG OFFICIAL DEVELOPERS ASSOCIATION
+          #border
+  center
+    span
+  center
+    .scroll-icon(onclick='myFunction()')
+    .container(onclick='myFunction()')
+      .chevron(onclick='myFunction()')
+      .chevron(onclick='myFunction()')
+      .chevron(onclick='myFunction()')
+section#content.section2
+  blockquote.bq1(data-aos='fade' data-aos-duration='3000' data-aos-easing='ease' data-aos-delay='0')
+    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae deleniti non dolorem, velit excepturi laboriosam corporis provident possimus architecto fugiat ratione vel illo, eos sed corrupti ipsam quam. Unde, cumque!
+  blockquote.bq2(data-aos='fade' data-aos-duration='3000' data-aos-easing='ease' data-aos-delay='0')
+    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae deleniti non dolorem, velit excepturi laboriosam corporis provident possimus architecto fugiat ratione vel illo, eos sed corrupti ipsam quam. Unde, cumque!
+  blockquote.bq3(data-aos='fade' data-aos-duration='3000' data-aos-easing='ease' data-aos-delay='0')
+    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae deleniti non dolorem, velit excepturi laboriosam corporis provident possimus architecto fugiat ratione vel illo, eos sed corrupti ipsam quam. Unde, cumque!
+  blockquote.bq4(data-aos='fade' data-aos-duration='3000' data-aos-easing='ease' data-aos-delay='0')
+    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae deleniti non dolorem, velit excepturi laboriosam corporis provident possimus architecto fugiat ratione vel illo, eos sed corrupti ipsam quam. Unde, cumque!
+  blockquote.bq5(data-aos='fade' data-aos-duration='3000' data-aos-easing='ease' data-aos-delay='1700')
+    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae deleniti non dolorem, velit excepturi laboriosam corporis provident possimus architecto fugiat ratione vel illo, eos sed corrupti ipsam quam. Unde, cumque!
+section.section3
+script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+script.
+  AOS.init();
